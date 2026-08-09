@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/submission.css">
+    <link rel="stylesheet" href="../css/modal.css">
+<body>
+    <div class="title">
+        <a href="./index.html" class="iconfont icon-fanhui"></a>
+        <em>登录/注册</em>
+    </div>
+    <form id="loginForm">
+  <div class="form_item">
+    <label for="phone">手机号：　　</label>
+    <input type="text" placeholder="请输入手机号" id="phone">
+  </div>
+  <div class="form_item">
+    <label for="password">　密码：　　</label>
+    <input type="password" placeholder="请输入密码" id="password">
+  </div>
+  <div class="form_item code_row">
+    <label for="code">验证码：　　</label>
+    <div class="code_wrap">
+      <input type="text" placeholder="请输入验证码" id="code">
+      <button type="button" id="getCode">获取验证码</button>
+    </div>
+  </div>
+  <button type="submit" class="login_btn">登录</button>
+</form>
+    <div class="other">
+    <a href="./signUp.html" class="signUp">注册账户</a>
+    <a href="./findPassword.html" class="forget">忘记密码</a>
+    </div>
+    <script src="../js/submission.js"></script>
+    <script src="../js/modal.js"></script>
+</head>
+</body>
+</html>

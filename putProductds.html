@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品上架</title>
+    <link rel="stylesheet" href="../css/putProduct.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <div class="cut">
+        <span>商品上架</span>
+    </div>
+
+    <form id="putForm">
+        <div class="form_item">
+            <label for="name">名称：</label>
+            <input type="text" placeholder="请输入名称" id="name">
+        </div>
+        <div class="form_item">
+            <label for="introduction">介绍：</label>
+            <textarea id="introduction" rows="6" cols="20"></textarea>
+        </div>
+        <div class="form_item">
+            <label for="pic">图片：</label>
+            <img id="pic" src="../img/image.png">
+        </div>
+        <div class="form_item">
+            <label for="price">价格：<span class="iconfont icon-renminbi"></span></label>
+            <input type="text" id="price" placeholder="请输入价格">
+        </div>
+
+        <button type="submit" id="submitBtn">上架</button>
+    </form>
+
+    <script src="../js/modal.js"></script>
+    <script src="../js/putProducts.js"></script>
+</body>
+</html>

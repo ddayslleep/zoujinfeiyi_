@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容投稿</title>
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <div class="cut">项目发布</div>
+    <form id="upForm">
+        <div class="form_item">
+            <label for="title">标题：</label>
+            <input type="text" placeholder="请输入标题" id="title">
+        </div>
+        <div class="form_item">
+            <label for="content">介绍：</label>
+            <textarea id="content" rows="6" cols="20"></textarea>
+        </div>
+        <div class="form_item">
+            <label for="pic">图片：</label>
+            <img id="pic" src="../img/image.png" >
+        </div>
+    <button  type="submit" id="submitBtn">发布</button>
+</form>
+<script src="../js/contribution.js"></script>
+<script src="../js/modal.js"></script>
+</body>
+</html>

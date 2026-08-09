@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购买</title>
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/purchase.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <a href="./details.html" class="iconfont icon-fanhui"></a>
+            <span>爱国剪纸底稿a4学生手工diy红色主题刻纸a3高清打印剪纸画半成品</span>
+        </div>
+        <div class="content">
+            <div class="intro">
+                <p>包邮</p>
+                <p>官方旗舰店</p>
+                <p>售后无忧</p>
+            </div>
+            <form class="purchaseFrom" id="turnForm">
+                <div class="formitem">
+                    <label for="way">支付方式：</label>
+                    <select id="way">
+                        <option value="" disabled selected >请选择您的支付方式</option>
+                        <option value="weChat">微信</option>
+                        <option value="Alipay">支付宝</option>
+                    </select>
+                </div>
+                <div class="formitem">
+                    <label for="name">     收货人：</label>
+                    <input type="text" id="name" placeholder="请输入您的姓名">
+                </div>
+                <div class="formitem">
+                    <label for="phone">     手机号：</label>
+                    <input type="text" id="phone" placeholder="请输入您的手机号">
+                </div>
+                <div class="formitem">
+                    <label for="address">详细地址：</label>
+                    <input type="text" id="address" placeholder="请输入您的地址">
+                </div>
+                <button type="submit" id="turn">完成</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/purchase_.js"></script>
+    <script src="../js/modal.js"></script>
+</body>
+</html>

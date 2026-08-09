@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索</title>
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <div class="search">
+        <a href="" class="iconfont icon-search2"></a>
+        <input id="searchInput" type="text" placeholder="请输入关键词">
+        <button id="searchBtn">搜索</button>
+    </div>
+    <div id="suggestBox" class="suggest-box"></div>
+
+    <p>搜索历史</p>
+    <div class="history" id="historyWrap">
+        <a href="./news.html">吉林传统戏剧节开幕</a>
+        <a href="#">新编京剧《颜真卿》讲述“书剑”</a>
+        <a href="#">大田雄狮：跃向“破圈”之路</a>
+        <a href="#">东方古典美学绽放阿穆尔河畔！黑龙江省京剧院赴俄展演架起…</a>
+        <a href="#">‘匠心传承 砥砺前行’南京剪纸申遗成功10周年剪刻纸作品邀请展举办</a>
+        <a href="#">文化和旅游部关于推动非物质文化遗产与旅游深度融合发展的通知</a>
+    </div>
+
+    <p id="resultTitle" style="display:none">搜索结果</p>
+    <div class="history" id="resultWrap"></div>
+
+    <a href="./index.html" id="back">首页</a>
+    <script src="../js/search.js"></script>
+    <script src="../js/modal.js"></script>
+</body>
+</html>
