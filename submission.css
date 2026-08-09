@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.title {
+  padding: 5.55555556vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.title a {
+  position: absolute;
+  left: 20.83333333vw;
+  font-size: 2.77777778vw;
+  color: #910012;
+  font-weight: bold;
+  text-decoration: none;
+}
+.title em {
+  position: relative;
+  left: 1.04166667vw;
+  text-align: center;
+  font-size: 2.77777778vw;
+  color: #910012;
+  font-weight: bold;
+}
+form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.08333333vw;
+}
+.form_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.08333333vw;
+}
+.form_item label {
+  width: 8.33333333vw;
+  font-size: 1.52777778vw;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+.code_wrap {
+  width: 60%;
+  height: 3.47222222vw;
+  border-radius: 1.73611111vw;
+  display: flex;
+  align-items: center;
+  border: 0.06944444vw solid #797979;
+}
+.code_wrap input {
+  width: 60%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 1.38888889vw;
+}
+input {
+  width: 60%;
+  height: 3.47222222vw;
+  border-radius: 1.73611111vw;
+  border: 0.06944444vw solid #797979;
+  font-size: 1.38888889vw;
+  outline: none;
+  padding: 0 1.38888889vw;
+  line-height: 3.47222222vw;
+}
+input::placeholder {
+  font-size: 1.38888889vw;
+}
+#getCode {
+  width: 40%;
+  height: 100%;
+  background-color: #994d4d;
+  text-align: center;
+  color: #333;
+  font-size: 1.38888889vw;
+  border: 0.06944444vw solid #000;
+  border-radius: 0 1.38888889vw 1.38888889vw 0;
+}
+#getCode:hover {
+  background-color: #8a2c2c;
+}
+.login_btn {
+  text-decoration: none;
+  margin: 1.38888889vw auto;
+  width: 13.88888889vw;
+  height: 3.47222222vw;
+  text-align: center;
+  color: #333;
+  background-color: #fff;
+  border: 0.06944444vw solid #000;
+  box-shadow: 0.20833333vw 0.20833333vw 0.34722222vw #5b5b5b;
+  border-radius: 1.04166667vw;
+  font-size: 1.73611111vw;
+}
+.login_btn:hover {
+  background-color: #8f8e8e;
+}
+.other {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.77777778vw 34.72222222vw;
+  gap: 3.47222222vw;
+}
+.signUp,
+.forget {
+  text-decoration: none;
+  font-size: 1.66666667vw;
+  font-weight: bold;
+  color: #000;
+}
+.signUp:hover,
+.forget:hover {
+  color: #910012;
+}
