@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  padding-top: max(1.04166667vw, 10px);
+  padding-bottom: max(5.55555556vw, 60px);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: max(1.04166667vw, 10px);
+}
+.nav img {
+  width: 5.55555556vw;
+  height: 5.55555556vw;
+}
+.nav p {
+  color: #424141;
+  font-size: max(2.22222222vw, 20px);
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: max(2.08333333vw, 16px);
+  margin-left: max(2.08333333vw, 16px);
+}
+#clock {
+  font-size: max(1.66666667vw, 14px);
+  margin-right: max(2.08333333vw, 16px);
+  color: #797979;
+}
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  gap: max(1.38888889vw, 12px);
+  padding: 0 max(2.08333333vw, 16px);
+}
+nav a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "微软雅黑";
+  font-size: max(1.38888889vw, 14px);
+  font-weight: bold;
+  color: #797979;
+  white-space: nowrap;
+}
+nav .iconfont {
+  font-size: max(2.77777778vw, 24px);
+  margin-bottom: max(0.69444444vw, 6px);
+  color: #797979;
+}
+.nav {
+  padding-bottom: 1.38888889vw;
+  border-bottom: 0.06944444vw solid #797979;
+}
+h1 {
+  margin-left: 2.08333333vw;
+  font-family: 微软雅黑;
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin-bottom: 1.04166667vw;
+}
+.intro {
+  width: 90%;
+  margin: 0 auto 1.38888889vw;
+}
+.intro .intro_detail {
+  display: flex;
+  gap: 4.16666667vw;
+  position: relative;
+}
+.intro .intro_detail::after {
+  content: "";
+  position: absolute;
+  left: -1.04166667vw;
+  bottom: 0;
+  width: 100%;
+  height: 0.06944444vw;
+  background-color: #797979;
+}
+.intro .tab-item {
+  font-size: 1.38888889vw;
+  padding: 0.69444444vw 0 0.34722222vw;
+  position: relative;
+  cursor: pointer;
+}
+.intro .tab-item.active {
+  color: #1e98d7;
+}
+.intro .tab-item:first-child::after {
+  content: "";
+  position: absolute;
+  left: -1.04166667vw;
+  bottom: -0.06944444vw;
+  width: 180%;
+  height: 0.13888889vw;
+  background-color: #1e98d7;
+  z-index: 2;
+}
+.eassy {
+  width: 80%;
+  height: 38.19444444vw;
+  margin: 0 auto 2.77777778vw;
+  padding: 1.38888889vw;
+  border: 0.06944444vw solid #797979;
+  border-radius: 1.04166667vw;
+}
+.infor {
+  display: flex;
+  align-items: center;
+  gap: 1.38888889vw;
+  margin-left: 1.38888889vw;
+}
+.infor img {
+  width: 4.16666667vw;
+  height: 4.16666667vw;
+  border-radius: 50%;
+}
+.infor .myName {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 0.34722222vw;
+  font-family: 微软雅黑;
+  font-size: 1.38888889vw;
+}
+.infor .myName .infor_detail {
+  color: #797979;
+  font-weight: lighter;
+  font-size: 0.97222222vw;
+}
+.infor .myName .infor_detail span {
+  padding-right: 0.27777778vw;
+}
+.essay_ {
+  font-size: 1.38888889vw;
+  color: #333;
+  margin: 0 0 1.04166667vw 6.94444444vw;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+.icon-fanhui {
+  font-size: 1.59722222vw;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  transform: rotateY(180deg);
+  margin-left: 0.41666667vw;
+}
+.pic {
+  display: flex;
+  margin: 0 6.94444444vw 2.77777778vw;
+  padding-top: 2.77777778vw;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5.55555556vw;
+}
+.pic img {
+  width: 16.66666667vw;
+  height: 15.27777778vw;
+  object-fit: cover;
+}
+.interaction {
+  margin-left: 6.94444444vw;
+  display: flex;
+  align-items: center;
+  gap: 5.55555556vw;
+  justify-content: flex-start;
+  margin-bottom: 1.04166667vw;
+  font-size: 1.25vw;
+}
+.like,
+.comment,
+.collection {
+  display: flex;
+  align-items: center;
+  gap: 0.69444444vw;
+  cursor: pointer;
+}
+.iconfont {
+  font-size: 2.08333333vw;
+}
+.like .iconfont {
+  color: #fa4134;
+}
+.collection .iconfont {
+  color: #ffcf26;
+}
+.share {
+  color: #a9b4c0;
+  cursor: pointer;
+}
+.write {
+  position: fixed;
+  right: 1.38888889vw;
+  bottom: 10.41666667vw;
+  z-index: 20;
+}
+.write img {
+  width: 7.63888889vw;
+  height: 7.63888889vw;
+  border-radius: 50%;
+  display: block;
+}

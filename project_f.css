@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.cut {
+  margin-bottom: 1.38888889vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.73611111vw;
+  font-size: 2.08333333vw;
+  font-family: 华文隶书;
+  font-weight: bold;
+  color: #910012;
+}
+.cut::after,
+.cut::before {
+  content: '';
+  background: #910012;
+  flex: 1;
+  height: max(0.34722222vw, 2px);
+}
+.title {
+  padding: 2.08333333vw 3.47222222vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.title a {
+  display: block;
+  flex-shrink: 0;
+  margin-right: 1.38888889vw;
+  text-decoration: none;
+  font-size: 2.08333333vw;
+  color: #333;
+  font-weight: bold;
+}
+.title a:hover {
+  color: #910012;
+}
+.title h1 {
+  flex: 1;
+  color: #000;
+  font-size: 1.80555556vw;
+  font-weight: bold;
+  font-family: 黑体;
+  text-align: center;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.38888889vw;
+  margin: 0 auto;
+}
+.intro img {
+  width: 33.33333333vw;
+  height: 17.36111111vw;
+}
+.intro p {
+  text-align: left;
+  font-family: 华文楷体;
+  font-size: 1.38888889vw;
+  font-weight: bold;
+  color: #333;
+}
+.intro_detail {
+  width: 80%;
+  white-space: pre-wrap;
+  font-family: 华文楷体;
+  font-size: 1.25vw;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.69444444vw;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  flex-wrap: nowrap;
+}
+.content_detail {
+  flex: 1;
+  min-width: 0;
+  padding: 0.69444444vw;
+}
+.content_detail h2 {
+  font-family: 华文楷体;
+  font-size: 1.59722222vw;
+  font-style: italic;
+}
+.content_detail h2::before {
+  content: '';
+  display: inline-block;
+  margin-right: 1.38888889vw;
+  width: 2.08333333vw;
+  height: 2.08333333vw;
+  border-radius: 50%;
+  box-shadow: 0.06944444vw 0.06944444vw 0.34722222vw #000;
+  background-color: #A22837;
+}
+.content_detail p {
+  font-family: 华文楷体;
+  font-size: 1.38888889vw;
+  font-weight: bold;
+  color: #333;
+  white-space: pre-wrap;
+}
