@@ -1,0 +1,108 @@
+//out: ../css/detail.css
+
+@import 'common';
+@import 'cut';
+
+.cut {
+    margin-top: (25/14.4vw);
+    margin-bottom: (25/14.4vw);
+}
+
+.name {
+    width: 90%;
+    margin: 0 auto (30/14.4vw);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: (50/14.4vw);
+    img {
+        width: (300/14.4vw);
+        height: (250/14.4vw);
+    }
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: (30/14.4vw);
+    font-family: 华文中宋;
+    font-size: (25/14.4vw);
+    font-weight: bold;
+    letter-spacing: (2/14.4vw);
+}
+
+#purchase,
+#shopping {
+    width: (240/14.4vw);
+    height: (60/14.4vw);
+    color: #333;
+    border: (1/14.4vw) solid #797979;
+    border-radius: (30/14.4vw);
+    text-decoration: none;
+    text-align: center;
+    line-height: (60/14.4vw);
+}
+
+#purchase {
+    background-color: #e0c718;
+}
+
+#shopping {
+    background-color: #D9001B;
+}
+
+.turn {
+    display: flex;
+    gap: (80/14.4vw);
+}
+
+.intro,
+.hints,
+.comments {
+    width: 90%;
+    margin: 0 auto (50/14.4vw);
+    display: flex;
+    flex-direction: column;
+    gap: (20/14.4vw);
+
+    p {
+        font-size: (25/14.4vw);
+        font-weight: bold;
+        font-family: 华文中宋;
+        color: #910012;
+    }
+}
+
+.intro_detail {
+    width: 90%;
+    margin-left: 3%;
+    p {
+        font-size: (23/14.4vw);
+        color: #333;
+    }
+}
+
+#details {
+    width: 90%;
+    margin-left: 3%;
+    font-size: (23/14.4vw);
+    color: #333;
+}
+#more {
+    width: 90%;
+    margin-left: 3%;
+
+    span {
+        display: block;
+        font-size: (23/14.4vw);
+        color: #333;
+        font-family: 华文宋体;
+        font-weight: bold;
+    }
+}
+
+.personal {
+    display: flex;
+    margin-bottom: (15/14.4vw);
+}

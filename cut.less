@@ -1,0 +1,22 @@
+//out :../css/cut.css
+
+.cut {
+    margin-bottom: (20/14.4vw);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: (25/14.4vw);
+    font-size: (30/14.4vw);
+    font-family: 华文隶书;
+    font-weight: bold;
+    color: #910012;
+
+    &::after,
+    &::before{
+        content: '';
+        background: #910012;
+        flex: 1;
+        height: max((5/14.4vw),2px);
+    }
+}

@@ -1,0 +1,122 @@
+//out: ../css/purchase.css
+
+@import 'common';
+
+.wrapper {
+    width: (1000/14.4vw);
+    height: (700/14.4vw);
+    margin: 0 auto;
+    background-color: #fafafa;
+    border-radius: (15/14.4vw);
+    box-shadow: (5/14.4vw) (5/14.4vw) (5/14.4vw) rgba(0.1, 0.1, 0.1, 0.4);
+}
+
+.title {
+    padding: (30/14.4vw) (50/14.4vw);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: (30/14.4vw);
+
+    a {
+        display: block;
+        flex-shrink: 0;
+        margin-right: (10/14.4vw);
+        text-decoration: none;
+        font-size: (30/14.4vw);
+        color: #910012;
+        font-weight: bold;
+    }
+
+    span {
+        flex: 1;
+        color: #000;
+        font-size: (26/14.4vw);
+        font-weight: bold;
+        font-family: 黑体;
+        text-align: center;
+    }
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: (20/14.4vw);
+}
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: (40/14.4vw);
+
+    p {
+        font-size: (22/14.4vw);
+
+        &:first-child {
+        width: (75/14.4vw);
+        height: (40/14.4vw);
+        border-radius: (20/14.4vw);
+        background-color: #ff2b2b;
+        color: #fff;
+        text-align: center;
+        line-height: (40/14.4vw);
+    }
+    }
+}
+
+.purchaseFrom {
+    display: flex;
+    flex-direction: column;
+    gap: (30/14.4vw);
+    justify-content: flex-start;
+    margin-bottom: (30/14.4vw);
+
+    label {
+        flex: 0 0 auto;
+        text-align: right;
+        color: #910012;
+        font-size: (26/14.4vw);
+        font-weight: bold;
+    }
+    input,
+    select {
+        width: (150/14.4vw);
+        height: (40/14.4vw);
+        outline: none;
+        flex: 1;
+        font-size: (16/14.4vw);
+        padding: (10/14.4vw);
+        border: (1/14.4vw)solid #797979;
+
+        &::placeholder {
+             color: #aaa;
+        }
+    }
+}
+
+#way {
+    width: (480/14.4vw);
+    color: #aaa;
+}
+
+#phone,
+#address {
+    width: (280/14.4vw);
+}
+
+#turn {
+    align-self: center;
+    text-decoration: none;
+    width: (500/14.4vw);
+    height: (60/14.4vw);
+    color: #333;
+    font-size: (25/14.4vw);
+    font-weight: bold;
+    text-align: center;
+    line-height: (60/14.4vw);
+    border: (1/14.4vw) solid #000;
+    border-radius: (10/14.4vw);
+    box-shadow: (5/14.4vw) (5/14.4vw) (5/14.4vw) rgba(24, 24, 24, 0.4);
+}

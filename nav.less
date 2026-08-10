@@ -1,0 +1,68 @@
+//out: ../css/nav.css
+
+body {
+  padding-top: max((15/14.4vw), 10px);
+  padding-bottom: max((80/14.4vw), 60px);
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: max((15/14.4vw), 10px);
+
+  img{
+    width: (80/14.4vw);
+    height:(80/14.4vw);
+  }
+
+  p {
+    color: #424141;
+    font-size: max((32/14.4vw), 20px);
+  }
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: max((30/14.4vw), 16px);
+  margin-left: max((30/14.4vw), 16px);
+}
+
+#clock {
+  font-size: max((24/14.4vw), 14px);
+  margin-right: max((30/14.4vw), 16px);
+  color: #797979;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  gap: max((20/14.4vw), 12px);
+  padding: 0 max((30/14.4vw), 16px);
+  
+
+  a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "微软雅黑";
+    font-size: max((20/14.4vw), 14px);
+    font-weight: bold;
+    color: #797979;
+    white-space: nowrap;
+  }
+
+  .iconfont {
+    font-size: max((40/14.4vw), 24px);
+    margin-bottom: max((10/14.4vw), 6px);
+    color: #797979;
+  }
+}

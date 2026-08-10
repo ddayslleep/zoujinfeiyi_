@@ -1,0 +1,26 @@
+//out: ../css/mine_normal.css
+
+@import 'mine_feiyi';
+
+
+.item {
+    img {
+        flex-shrink: 0;
+    }
+    .btn-group,
+    .btn-groups {
+        flex-shrink: 0;
+        align-self: flex-end;
+        font-family: 华文隶书;
+        font-weight: bold;
+        font-size: (26/14.4vw);
+    }
+}
+
+.btn-groups {
+        display: flex;
+        gap: (40/14.4vw);
+        .confirm {
+            cursor: pointer;
+        }
+}

@@ -1,0 +1,56 @@
+//out :../css/project_s.css
+
+@import 'common';
+@import 'cut';
+
+.title {
+    padding: (30/14.4vw) (50/14.4vw);
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        display: block;
+        flex-shrink: 0;
+        margin-right: (20/14.4vw);
+        text-decoration: none;
+        font-size: (30/14.4vw);
+        color: #333;
+        font-weight: bold;
+
+        &:hover {
+            color: #910012;
+        }
+    }
+
+    h1 {
+        flex: 1;
+        color: #000;
+        font-size: (26/14.4vw);
+        font-weight: bold;
+        font-family: 黑体;
+        text-align: center;
+    }
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        align-self: center;
+        width: (400/14.4vw);
+        height: (350/14.4vw);
+        object-fit: cover;
+    }
+
+    p {
+        text-align: left;
+        white-space: pre-wrap;
+        font-family: 华文楷体;
+        font-size: (22/14.4vw);
+        font-weight: bold;
+        width: 80%;
+        display: block;
+        margin: (20/14.4vw) auto;
+    }
+}

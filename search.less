@@ -1,0 +1,138 @@
+//out: ../css/search.css
+
+@import 'common';
+
+
+body {
+    width: (1100/14.4vw);
+    height: (600/14.4vw);
+    margin: 0 auto ;
+    padding-top: (40/14.4vw);
+    background-color: #fff;
+    border-radius: (20/14.4vw);
+    box-shadow: (5/14.4vw) (5/14.4vw) (10/14.4vw) rgb(115, 114, 114);
+}
+.search {
+    width: 80%;
+    height: (80/14.4vw);
+    margin: 0 auto (20/14.4vw);
+    padding:  (10/14.4vw);
+    display: flex;
+    align-items: center;
+    border: (3/14.4vw) solid #000;
+    border-radius: (40/14.4vw);
+    overflow: hidden;
+
+    .iconfont {
+        text-decoration: none;
+        font-size: (50/14.4vw);
+        color: #000;
+        margin-right: (12/14.4vw);
+    }
+
+    input {
+        height: 100%;
+        padding: (20/14.4vw) (8/14.4vw);
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: (20/14.4vw);
+        font-family: 华文中宋;
+
+        ::placeholder {
+            font-size: (20/14.4vw);
+        }
+    }
+
+    button {
+        width: (150/14.4vw);
+        height: (60/14.4vw);
+        border: none;
+        border-radius: (30/14.4vw);
+        background-color: #B80016;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        font-family: 华文中宋;
+        font-weight: bold;
+        font-size: (22/14.4vw);
+    }
+
+    button:hover {
+        background-color: #901212;
+    }
+}
+
+
+p {
+    padding: (30/14.4vw);
+    margin-left: 10%;
+    color: #B80016;
+    font-family: 华文隶书;
+    font-size: (30/14.4vw);
+    font-weight: bold;
+}
+.history {
+    width: 68%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: (20/14.4vw);
+    counter-reset: num 0;
+
+    a {
+        text-decoration: none;
+        font-family: 华文中宋;
+        font-size: (20/14.4vw);
+        color: #000;
+        font-weight: bold;
+        counter-increment: num;
+        display: flex;
+        gap: (5/14.4vw);
+
+        &::before{
+            content: counter(num)".";
+            font-weight: bold;
+            white-space: nowrap;
+        }
+    }
+}
+
+#back {
+    display: block;
+    margin: (15/14.4vw) (15/14.4vw) 0 auto;
+    width: (200/14.4vw);
+    height: (40/14.4vw);
+    border: (1/14.4vw) solid #000;
+    border-radius: (15/14.4vw);
+    box-shadow: (5/14.4vw) (5/14.4vw) (10/14.4vw) rgba(0.1, 0.1, 0.1, 0.5);
+    font-size: (20/14.4vw);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: (40/14.4vw);
+    color: #000;
+}
+
+.suggest-box {
+  width: 68%;
+  margin: 0 auto;
+  background: #fff;
+  border: 2px solid #000;
+  border-top: none;
+  border-radius: 0 0 (20/14.4vw) (20/14.4vw);
+  display: none;
+  overflow: hidden;
+  .suggest-item {
+    padding: (16/14.4vw) (20/14.4vw);
+    font-family: 华文中宋;
+    font-size: (20/14.4vw);
+    cursor: pointer;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}

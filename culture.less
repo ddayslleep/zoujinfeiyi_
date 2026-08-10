@@ -1,0 +1,194 @@
+//out: ../css/culture.css
+
+@import 'common';
+@import 'nav';
+
+// 顶部
+
+.nav {
+    padding-bottom: (20/14.4vw);
+    border-bottom: (1/14.4vw) solid #797979;
+}
+// 主体
+
+h1 {
+    margin-left: (30/14.4vw);
+    font-family: 微软雅黑;
+    font-size: (36/14.4vw);
+    font-weight: bold;
+    margin-bottom: (15/14.4vw);
+}
+
+.intro {
+    width: 90%;
+    margin: 0 auto (20/14.4vw);
+
+    .intro_detail {
+        display: flex;
+        gap: (60/14.4vw);
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            left: (-15/14.4vw);
+            bottom: 0;
+            width: 100%;
+            height: (1/14.4vw);
+            background-color: #797979;
+        }
+    }
+    
+    .tab-item {
+        font-size: (20/14.4vw);
+        padding: (10/14.4vw) 0 (5/14.4vw);
+        position: relative;
+        cursor: pointer;
+        
+        &.active {
+            color: #1e98d7;
+        }
+
+        &:first-child::after {
+            content: "";
+            position: absolute;
+            left: (-15/14.4vw);
+            bottom: (-1/14.4vw);
+            width: 180%;
+            height: (2/14.4vw);
+            background-color: #1e98d7;
+            z-index: 2;
+        }
+    }
+}
+
+// 帖子
+
+.eassy {
+    width: 80%;
+    height: (550/14.4vw);
+    margin: 0 auto (40/14.4vw);
+    padding: (20/14.4vw);
+    border:(1/14.4vw) solid #797979;
+    border-radius: (15/14.4vw);
+}
+
+.infor {
+    display: flex;
+    align-items: center;
+    gap: (20/14.4vw);
+    margin-left: (20/14.4vw);
+
+    img {
+        width: (60/14.4vw);
+        height: (60/14.4vw);
+        border-radius: 50%;
+    }
+
+    .myName {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        gap: (5/14.4vw);
+        font-family: 微软雅黑;
+        font-size: (20/14.4vw);
+        .infor_detail {
+            color: #797979;
+            font-weight: lighter;
+            span {
+                padding-right: (4/14.4vw);
+            }
+            font-size: (14/14.4vw);
+        }
+    }
+}
+
+.essay_ {
+    font-size: (20 / 14.4vw);
+    color: #333;
+    margin: 0 0 (15/14.4vw) (100/14.4vw);
+    //让帖子只显示两行
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;//需要加上这个，113行才不会报错
+    overflow: hidden;
+}
+
+.icon-fanhui {
+    font-size: (23 / 14.4vw);
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    transform: rotateY(180deg);
+    margin-left: (6/14.4vw);
+}
+
+.pic {
+    display: flex;
+    margin:  0 (100/14.4vw) (40/14.4vw);
+    padding-top: (40/14.4vw);
+    justify-content: flex-start;
+    align-items: center;
+    gap: (80/14.4vw);
+
+    img {
+         width: (240/14.4vw);
+        height: (220/14.4vw);
+        object-fit: cover;
+    }
+}
+// 互动部分
+.interaction {
+    margin-left: (100/14.4vw);
+    display: flex;
+    align-items: center;
+    gap: (80/14.4vw);
+    justify-content: flex-start;
+    margin-bottom: (15/14.4vw);
+    font-size: (18/14.4vw);
+}
+
+.like,
+.comment,
+.collection {
+    display: flex;
+    align-items: center;
+    gap: (10/14.4vw);
+    cursor: pointer;
+}
+
+.iconfont {
+        font-size: (30/14.4vw);
+    }
+
+.like .iconfont {
+    color: #fa4134;
+}
+
+.collection .iconfont {
+    color: #ffcf26;
+}
+
+.share {
+    color: #a9b4c0;
+    cursor: pointer;
+}
+// 内容发布
+.write {
+    position: fixed;
+    right: (20/14.4vw);
+    bottom: (150/14.4vw);
+    z-index: 20;
+    img {
+        width: (110/14.4vw);
+        height: (110/14.4vw);
+        border-radius: 50%;
+        display: block;
+    }
+}
+
+
+
+
+

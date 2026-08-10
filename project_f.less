@@ -1,0 +1,108 @@
+//out :../css/project_f.css
+
+@import 'common';
+@import 'cut';
+
+.title {
+    padding: (30/14.4vw) (50/14.4vw);
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        display: block;
+        flex-shrink: 0;
+        margin-right: (20/14.4vw);
+        text-decoration: none;
+        font-size: (30/14.4vw);
+        color: #333;
+        font-weight: bold;
+
+        &:hover {
+            color: #910012;
+        }
+    }
+
+    h1 {
+        flex: 1;
+        color: #000;
+        font-size: (26/14.4vw);
+        font-weight: bold;
+        font-family: 黑体;
+        text-align: center;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: (20/14.4vw);
+    margin: 0 auto;
+
+    img {
+        width: (480/14.4vw);
+        height: (250/14.4vw);
+    }
+
+    p {
+        text-align: left;
+        font-family: 华文楷体;
+        font-size: (20/14.4vw);
+        font-weight: bold;
+        color: #333;
+    }
+}
+
+.intro_detail {
+    width: 80%;
+    white-space: pre-wrap;
+    font-family: 华文楷体;
+    font-size: (18/14.4vw);
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: (10/14.4vw);
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+.content_detail{
+    flex: 1;
+    min-width: 0;
+    padding: (10/14.4vw);
+
+    h2 {
+        font-family: 华文楷体;
+        font-size: (23/14.4vw);
+        font-style: italic;
+
+        &::before{
+            content: '';
+            display: inline-block;
+            margin-right: (20/14.4vw);
+            width: (30/14.4vw);
+            height: (30/14.4vw);
+            border-radius: 50%;
+            box-shadow: (1/14.4vw) (1/14.4vw) (5/14.4vw) #000;
+            background-color: #A22837;
+        }
+    }
+
+    p {
+        font-family: 华文楷体;
+        font-size: (20/14.4vw);
+        font-weight: bold;
+        color: #333;
+        white-space: pre-wrap;
+    }
+}
